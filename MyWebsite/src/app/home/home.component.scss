@@ -1,0 +1,473 @@
+/* Body Background and Basic Styles */
+body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d); 
+    background-color: #1a2a6c; 
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden; 
+}
+
+/* Welcome Section */
+.welcome-section {
+    position: fixed;
+    text-align: center;
+    margin-top: 40%;
+    margin-bottom: 10%; 
+    z-index: 3;
+    position: relative; 
+}
+
+
+.btn-welcome {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #fdbb2d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-welcome:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.4);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Video Background */
+#background-video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    z-index: -1; 
+}
+
+/* Container for the page */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header (Name and Role) Styling */
+.header {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+/* Typing Effect for Text */
+.typing-effect {
+    font-family: 'Courier New', monospace;
+    font-size: 2rem; 
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff; 
+    padding-right: 5px;
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink-caret 0.75s step-end 4s forwards;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: transparent; 
+    }
+}
+
+/* Portfolio Content (Main Content) */
+.portfolio-content {
+    margin-top: 50px; 
+    padding-bottom: 100px; 
+    margin-right: 300px; 
+}
+
+/* Fixed Image Section */
+.right-sec {
+    position: absolute;
+    top: 38%;
+    right: -27%;
+    transform: translateY(-50%); 
+    border: 8px solid #fff; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 2; 
+}
+
+/* Image Styling */
+.iphone-image {
+    width: 250px; 
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Title Styling */
+.title {
+    color: #fdbb2d; 
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Card (Main Portfolio Content) */
+.card {
+    background-color: rgba(216, 215, 215, 0.173); 
+    padding: 20px;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%; 
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.card2 {
+    background-color: rgba(216, 215, 215, 0.475);
+    padding: 20px;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fdbb2d; 
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 768px) {
+    /* Adjust the header typography */
+    .typing-effect {
+        font-size: 1.5rem; 
+    }
+
+    /* Adjust the card width */
+    .card {
+        width: 100%;
+    }
+
+    /* Adjust the fixed image size */
+    .iphone-image {
+        width: 200px;
+    }
+
+    /* Adjust margins and padding */
+    .portfolio-content {
+        margin-right: 50px;
+    }
+}
+
+
+.new-video-section {
+    margin-top: 50px; 
+    position: relative;
+    padding: 20px;
+}
+
+.new-video-section video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.new-content {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.new-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.new-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #fdbb2d; 
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .new-video-section video {
+        height: 300px;
+    }
+}
+
+.text-accent {
+    color: #F0E68C; 
+}
+
+.text-shadow-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #1a1a2e; 
+    color: #fdfdfd; 
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+}
+.footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fdbb2d;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.footer .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .social-icons li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fdbb2d;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .social-icons li a:hover {
+    color: #ffffff;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #bfbfbf; 
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+
+    .footer .social-icons li a {
+        font-size: 1rem;
+    }
+}
+
+#footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* Form Styling */
+.contact-form {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    color: white;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 1; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn-submit {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #fdbb2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #f0a500;
+}
+
+
+//hobby section css
+
+.hobbies-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hobbies-section h2 {
+    font-size: 2rem;
+    color: #fdbb2d; /* Accent color */
+    margin-bottom: 20px;
+}
+
+.hobbies-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hobbies-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hobbies-section ul li {
+    margin-bottom: 20px;
+}
+
+.hobbies-section h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #fdbb2d;
+}
+
+.hobbies-section ul li p {
+    font-size: 1rem;
+    color: #bfbfbf; /* Light grey for description */
+}
+
+.hobbies-section ul li h3,
+.hobbies-section ul li p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .hobbies-section {
+        padding: 20px;
+    }
+
+    .hobbies-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .hobbies-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .hobbies-section p {
+        font-size: 1rem;
+    }
+}
+
+// godown button css
+
+.go-down-btn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background: url("../../assets/img/sunny.png") no-repeat center center; 
+    background-size: cover; 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    z-index: 10;
+}
+
+.go-down-btn:hover {
+    transform: scale(1.1); 
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+
+
+.next-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 100px; 
+}
